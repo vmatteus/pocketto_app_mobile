@@ -1,0 +1,84 @@
+<html lang="pt">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Pocketto Web</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top login" id="main-menu">
+            <div class="container">
+                <div class="navbar-header">
+                    <div class="header-content">
+                        <img class="navbar-brand logo" src="img/logo.png" alt="">
+                        <h1>Cadastro de usuários</h1>
+                        <h2>OKPAGO Soluções de Pagamento LTDA</h2>
+                    </div>
+                    <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button> -->
+                </div>
+                <!-- <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div> -->
+            </div>
+        </nav>
+        <div class="container" id="login">
+            <form action="" class="">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="form-group">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Um código foi enviado para o número</label>
+                            <div class="inner-addon center-addon">
+                                <input type="text" class="phone form-control confirmation-phone" id="telefone" readonly="" value="(51) 99999.9999">
+                                <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Informe o código recebido</label>
+                            <input type="text" class="form-control confirmation-code">
+                            <span class="countdown">Aguarde 30 segundos</span>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Confirmar" class="btn btn-primary">
+                        </div>
+                        <div class="form-group">
+                            <a href="#">Não recebi</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <footer>
+            <div class="container">
+                <address class="pull-right">Av. Dr. Nilo Peçanha, 1221 • Boa Vista • Porto Alegre • 51 3073.6594 • <a href="#" class="pull-right">www.okpago.com.br</a></address>
+            </div>
+        </footer>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.mask.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.date').mask('00/00/0000');
+                $('.time').mask('00:00:00');
+                $('.date_time').mask('00/00/0000 00:00:00');
+                $('.cep').mask('00000-000');
+                $('.phone').mask('(00) 00000-0000');
+                $('.confirmation-code').mask('000000');
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,266 @@
+@lg: 1024px;
+@xs: 414px; // IPHONE 6S LANDSCAPE
+@color--client-primary: #000000;
+@color--white: #FFFFFF;
+@color--grey: #e0e0e0;
+@color--black: #000000;
+
+body {
+    padding-top: 145px;
+    font-family: "Helvetica-light", sans-serif;
+    background: @color--grey;
+}
+
+@font-face {
+    font-family: 'helvetica', sans-serif;
+    src: url(../fonts/helr65w.ttf);
+}
+
+@font-face {
+    font-family: 'helvetica-light', sans-serif;
+    src: url(../fonts/HelveticaLt.ttf);
+}
+
+ul, li {
+    list-style: none;
+}
+
+a, a:hover, a:focus {
+    text-decoration: none;
+}
+
+img {
+    pointer-events: none;
+}
+
+input, .btn {
+    border-radius: 7px;
+}
+
+nav {
+
+    &.login {
+        background: @color--client-primary;
+        border: 0;
+        padding: 13px 0;
+
+        .navbar-header {
+            width: 100%;
+
+            @media (max-width: @xs) {
+                width: auto;
+            }
+
+            .header-content {
+                max-width: 480px;
+                height: 110px;
+                margin: 0 auto;
+
+                @media (max-width: @xs) {
+                    max-width: 100%;
+                }
+
+                .logo {
+                    height: auto;
+
+                    @media (max-width: @xs) {
+                        max-width: 110px;
+                    }
+                }
+
+                h1, h2 {
+                    color: @color--white;
+                    font-family: 'Helvetica', sans-serif;
+                    margin: 0;
+                }
+
+                h1 {
+                    padding-top: 30px;
+                    font-weight: bold;
+                    font-size: 30px;
+
+                    @media (max-width: @xs) {
+                        padding-top: 25px;
+                        font-size: 18px;
+                    }
+                }
+
+                h2 {
+                    font-size: 18px;
+                    letter-spacing: 0.5px;
+
+                    @media (max-width: @xs) {
+                        font-size: 15px;
+                        letter-spacing: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+&#login {
+    min-height: 765px;
+
+    @media (min-width: @lg) {
+        width: 380px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+}
+
+form {
+    padding: 75px 0 0;
+
+    > * {
+        color: @color--black;
+    }
+
+    .form-group {
+        text-align: center;
+
+
+        input {
+            height: 65px;
+            border: 0;
+            border-radius: 6px;
+            width: 100%;
+
+            &[type="text"] {
+                font-size: 24px;
+                font-weight: bold;
+                margin-bottom: 25px;
+                color: @color--black;
+                text-align: center;
+            }
+
+            &[type="submit"], .btn-primary {
+                background: @color--client-primary;
+                font-weight: bold;
+                font-size: 18px;
+                color: @color--white;
+            }
+
+            &.confirmation-phone {
+                background: none;
+                box-shadow: none;
+                height: 50px;
+                border-bottom: 1px solid @color--black;
+            }
+
+            &.confirmation-code {
+                margin-bottom: 10px;
+                position: relative;
+                display: inline-block;
+            }
+        }
+
+        .btn-primary {
+            background: @color--client-primary;
+            font-weight: bold;
+            font-size: 18px;
+            color: @color--white;
+            height: 65px;
+            border: 0;
+            border-radius: 6px;
+            width: 100%;
+
+            i {
+                padding: 0 10px 0 0;
+            }
+        }
+
+        a.btn-primary {
+            line-height: 50px;
+        }
+    }
+
+    .form-title {
+        font-size: 30px;
+    }
+
+    .inner-addon {
+        position: relative;
+
+        i {
+            position: absolute;
+            top: 30%;
+            right: auto;
+            left: auto;
+            margin-left: 100px;
+        }
+    }
+
+    label {
+        font-size: 18px;
+        letter-spacing: -0.2px;
+    }
+
+    span, a {
+        font-weight: bold;
+        font-size: 18px;
+        color: @color--black;
+        line-height: 20px;
+
+        &.countdown {
+            display: block;
+            margin-bottom: 25px;
+        }
+    }
+
+    &.form-login {
+
+        .form-group {
+            margin-bottom: 5px;
+
+            span {
+                font-size: 24px;
+                line-height: 24px;
+                margin-bottom: 15px;
+                display: block;
+            }
+
+            .form-control {
+                text-align: left;
+                font-size: 20px;
+            }
+
+            .btn-primary {
+                margin-bottom: 20px;
+
+                @media (max-width: @xs) {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        input[type="text"] {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+
+footer {
+    background: @color--client-primary;
+    padding: 16px 0 17px;
+
+    address {
+        margin: 0;
+    }
+
+    * {
+        font-size: 12px;
+        font-weight: bold;
+        color: @color--white;
+    }
+
+    a {
+        padding-left: 5px;
+
+        &:hover {
+            color: @color--white;
+            text-decoration: underline;
+        }
+    }
+}
