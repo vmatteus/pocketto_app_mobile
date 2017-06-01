@@ -1,0 +1,117 @@
+<html lang="pt">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Pocketto Web</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top internal" id="main-menu">
+            <div class="container">
+                <div class="navbar-header">
+                    <img class="navbar-brand logo" src="img/logo_square.png" alt="">
+                    <div class="user pull-right">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <b class="hidden-xs">Bem-vindo(a), Luciano Antunes <span>JY7KL</span></b>
+                            <a href="#" class="img-user"><img src="img/pic.png" alt=""></a>
+                            <span class="sr-only">Toggle navigation</span>
+                        </button>
+                        <div id="navbar" class="navbar-collapse collapse submenu" aria-expanded="false">
+                            <ul class="nav navbar-nav">
+                                <li><a href="doacoes.html">Doar</a></li>
+                                <li><a href="campanhas.html">Campanhas</a></li>
+                                <li><a href="minhas_doacoes.html">Minhas Doações</a></li>
+                                <li><a href="perfil.html">Meu Perfil</a></li>
+                                <li><a href="login.html">Sair</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container" id="main-container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-title">Meu perfil</h1>
+                    <b class="page-description">Minhas informações pessoais.</b>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-xs-12">
+                    <div class="custom-upload">
+                        <img src="img/no-photo.png" class="img-responsive user-image" alt="">
+                        <span>Selecione ou edite a foto para seu perfil.</span>
+                        <input type="file">
+                        <div class="fake-file">
+                            <input disabled="disabled" >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-xs-12">
+                    <form action="" class="profile">
+                        <div class="form-group">
+                            <input type="text" placeholder="Nome completo" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Telefone celular" class="phone form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="E-mail" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <select name="" id="" class="form-control">
+                                <option value="" disabled="">Sexo</option>
+                                <option value="feminino">Feminino</option>
+                                <option value="masculino">Masculino</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Data de nascimento" class="date form-control">
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <input type="submit" class="btn btn-primary" value="Salvar">
+                                </div>
+                                <div class="col-lg-2">
+                                    <a href="#" class="btn btn-link">Voltar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <a href="#" class="logo-footer pull-left">
+                    <img src="img/logo_footer.png" alt="">
+                </a>
+                <address class="pull-right">Av. Dr. Nilo Peçanha, 1221 • Boa Vista • Porto Alegre • 51 3073.6594 • <a href="#" class="pull-right">www.okpago.com.br</a></address>
+            </div>
+        </footer>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.mask.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.date').mask('00/00/0000');
+                $('.time').mask('00:00:00');
+                $('.date_time').mask('00/00/0000 00:00:00');
+                $('.cep').mask('00000-000');
+                $('.phone').mask('(00) 00000-0000');
+                $('.confirmation-code').mask('000000');
+
+                $('.custom-upload input[type=file]').change(function(){
+                    $(this).next().find('input').val($(this).val());
+                });
+            });
+        </script>
+    </body>
+</html>
