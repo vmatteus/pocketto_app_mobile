@@ -11,7 +11,7 @@
     </head>
 
     <body>
-        <nav class="navbar navbar-default navbar-fixed-top internal" id="main-menu">
+        <nav class="navbar navbar-default internal" id="main-menu">
             <div class="container">
                 <div class="navbar-header">
                     <img class="navbar-brand logo" src="img/logo_square.png" alt="">
@@ -37,53 +37,102 @@
         <div class="container" id="main-container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-title">Minhas Doações</h1>
-                    <b class="page-description">Listagem de doações gerada e de doações pagas.</b>
-                    <form action="" class="form-inline filter pull-right">
-                        <div class="form-group">
-                            <select name="" id="" class="form-control">
-                                <option value="" >Status</option>
-                            </select>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h1 class="page-title">Minhas Doações</h1>
+                            <b class="page-description">Listagem de doações gerada e de doações pagas.</b>
                         </div>
-                        <div class="form-group">
-                            <select name="" id="">
-                                <option value="">Destino da Doação</option>
-                            </select>
+                        <div class="col-lg-6">
+                            <form action="" class="form-inline filter pull-right">
+                                <div class="row">
+                                    <div class="col-lg-5">
+                                        <div class="form-group select">
+                                            <select name="" id="" class="form-control">
+                                                <option value="" >Status</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <div class="form-group select">
+                                            <select name="" id="" class="form-control">
+                                                <option value="">Destino da Doação</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-xs-12">
-                    <div class="product">
-                        <img src="img/img_campanha.png" alt="">
-                        <div class="product-content">
-                            <h3>Produto ou Serviço para Compra</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus cursus nulla vel interdum lobortis owdincoawn... <a href="campanha_detail.html">Ler mais!</a></p>
-                            <div class="event-date"><i class="fa fa-calendar" aria-hidden="true"></i> Válido até 20/09/2017</div>
-                            <a href="campanha_detail.html" class="btn btn-primary">Comprar</a>
+                <div class="col-lg-12">
+                    <div class="status-doacao sucesso">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-8 col-xs-12">
+                                <h2>Campanha Crianças da Vila Conceição</h2>
+                                <div class="data">29/05/2017</div>
+                                <span class="status">Doação efetuada com sucesso!</span>
+                            </div>
+                            <div class="col-lg-6 col-md-4 col-xs-12">
+                                <i class="fa fa-check aprovado pull-right" aria-hidden="true"></i>
+                                <b class="pull-right">R$ <span>30</span>,00</b>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-xs-12">
-                    <div class="product">
-                        <img src="img/img_campanha.png" alt="">
-                        <div class="product-content">
-                            <h3>Produto ou Serviço para Compra</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus cursus nulla vel interdum lobortis owdincoawn... <a href="campanha_detail.html">Ler mais!</a></p>
-                            <div class="event-date"><i class="fa fa-calendar" aria-hidden="true"></i> Válido até 20/09/2017</div>
-                            <a href="campanha_detail.html" class="btn btn-primary">Comprar</a>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="status-doacao pendente">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h2>Campanha Crianças da Vila Conceição</h2>
+                                <div class="data">29/05/2017</div>
+                                <span class="status">Doação pendente</span>
+                            </div>
+                            <div class="col-lg-6">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-paper-plane" aria-hidden="true"></i> Enviar comprovante</a></li>
+                                    <li><a href="#"><i class="fa fa-pencil" aria-hidden="true"></i> Alterar valor / data</a></li>
+                                    <li><a href="#"><i class="fa fa-times" aria-hidden="true"></i> Remover</a></li>
+                                </ul>
+                                <b class="pull-right">R$ <span>30</span>,00</b>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-xs-12">
-                    <div class="product">
-                        <img src="img/img_campanha.png" alt="">
-                        <div class="product-content">
-                            <h3>Produto ou Serviço para Compra</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus cursus nulla vel interdum lobortis owdincoawn... <a href="campanha_detail.html">Ler mais!</a></p>
-                            <div class="event-date"><i class="fa fa-calendar" aria-hidden="true"></i> Válido até 20/09/2017</div>
-                            <a href="campanha_detail.html" class="btn btn-primary">Comprar</a>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="status-doacao sucesso">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-8 col-xs-12">
+                                <h2>Campanha Crianças da Vila Conceição</h2>
+                                <div class="data">29/05/2017</div>
+                                <span class="status">Doação efetuada com sucesso!</span>
+                            </div>
+                            <div class="col-lg-6 col-md-4 col-xs-12">
+                                <i class="fa fa-check aprovado pull-right" aria-hidden="true"></i>
+                                <b class="pull-right">R$ <span>30</span>,00</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="status-doacao sucesso">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-8 col-xs-12">
+                                <h2>Campanha Crianças da Vila Conceição</h2>
+                                <div class="data">29/05/2017</div>
+                                <span class="status">Doação efetuada com sucesso!</span>
+                            </div>
+                            <div class="col-lg-6 col-md-4 col-xs-12">
+                                <i class="fa fa-check aprovado pull-right" aria-hidden="true"></i>
+                                <b class="pull-right">R$ <span>30</span>,00</b>
+                            </div>
                         </div>
                     </div>
                 </div>
