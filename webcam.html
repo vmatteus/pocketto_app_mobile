@@ -2,7 +2,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
         <title>Pocketto Web</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -114,19 +114,5 @@
         <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery.mask.min.js"></script>
         <script src="js/scripts.js"></script>
-        <script>
-            $(document).ready(function(){
-                $('.date').mask('00/00/0000');
-                $('.time').mask('00:00:00');
-                $('.date_time').mask('00/00/0000 00:00:00');
-                $('.cep').mask('00000-000');
-                $('.phone').mask('(00) 00000-0000');
-                $('.confirmation-code').mask('000000');
-
-                $('.custom-upload input[type=file]').change(function(){
-                    $(this).next().find('input').val($(this).val());
-                });
-            });
-        </script>
     </body>
 </html>
