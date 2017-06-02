@@ -45,9 +45,11 @@
                 <div class="col-lg-12">
                     <form action="" class="doacao">
                         <div class="row">
-                            <div class="col-lg-4 col-xs-12">
+                            <div class="col-lg-4 col-xs-12 tipo-servico active">
                                 <div class="form-group">
                                     <label for="">1. Produto ou Serviço:</label>
+                                </div>
+                                <div class="form-group select">
                                     <select name="" id="" class="form-control">
                                         <option value="">Produto ou Serviço 1</option>
                                     </select>
@@ -56,38 +58,38 @@
                                     <textarea class="form-control" name="" id="" cols="30" rows="10" placeholder="Escreva aqui uma observação (opcional)"></textarea>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-xs-12">
+                            <div class="col-lg-4 col-xs-12 valor-pagamento">
                                 <label for="">2. Valor do Pagamento:</label>
                                 <div class="btn-group" data-toggle="buttons">
                                     <div class="row">
                                         <div class="col-xs-6">
                                             <label class="btn btn-option btn-primary">
-                                                <input type="radio" name="valor" id="120" autocomplete="off"> R$ 120
+                                                <input type="radio" name="valor" id="120" autocomplete="off"> R$ 120,00
                                             </label>
                                         </div>
                                         <div class="col-xs-6">
                                             <label class="btn btn-option btn-primary">
-                                                <input type="radio" name="valor" id="100" autocomplete="off"> R$ 100
+                                                <input type="radio" name="valor" id="100" autocomplete="off"> R$ 100,00
                                             </label>
                                         </div>
                                         <div class="col-xs-6">
                                             <label class="btn btn-option btn-primary">
-                                                <input type="radio" name="valor" id="80" autocomplete="off"> R$ 80
+                                                <input type="radio" name="valor" id="80" autocomplete="off"> R$ 80,00
                                             </label>
                                         </div>
                                         <div class="col-xs-6">
                                             <label class="btn btn-option btn-primary">
-                                                <input type="radio" name="valor" id="60" autocomplete="off"> R$ 60
+                                                <input type="radio" name="valor" id="60" autocomplete="off"> R$ 60,00
                                             </label>
                                         </div>
                                         <div class="col-xs-6">
                                             <label class="btn btn-option btn-primary">
-                                                <input type="radio" name="valor" id="40" autocomplete="off"> R$ 40
+                                                <input type="radio" name="valor" id="40" autocomplete="off"> R$ 40,00
                                             </label>
                                         </div>
                                         <div class="col-xs-6">
                                             <label class="btn btn-option btn-primary">
-                                                <input type="radio" name="valor" id="20" autocomplete="off"> R$ 20
+                                                <input type="radio" name="valor" id="20" autocomplete="off"> R$ 20,00
                                             </label>
                                         </div>
                                         <div class="col-xs-12">
@@ -99,42 +101,65 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-xs-12">
-                                <div class="form-group">
+                            <div class="col-lg-4 col-xs-12 tipo-pagamento">
+                                <label for="pagamentoUnico" class="pagamento-unico">
                                     <label for="">3. Tipo de Pagamento:</label>
-                                </div>
-                                <div class="form-group">
-                                    <label class="radio-inline">
-                                        <input type="radio" name="optionsRadios" id="optionsRadios1">Pagamento Único
-                                    </label>
                                     <div class="form-group">
-                                        <label for="item1" class="col-md-2 control-label text-left">Text control:</label>
-                                        <div class="col-md-10">
-                                            <input type="text">
+                                        <label class="radio-inline">
+                                            <input type="radio" name="pagamentoUnico" id="pagamentoUnico">Pagamento Único
+                                        </label>
+                                        <div class="form-group">
+                                            <div class="select dia">
+                                                <select name="" id="" class="form-control">
+                                                    <option value="">01</option>
+                                                </select>
+                                            </div>
+                                            <div class="select mes">
+                                                <select name="" id="" class="form-control">
+                                                    <option value="">Novembro</option>
+                                                </select>
+                                            </div>
+                                            <div class="select ano">
+                                                <select name="" id="" class="form-control">
+                                                    <option value="">2017</option>
+                                                </select>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                </label>
                                 <div class="form-group">
-                                    <label class="radio-inline">
-                                        <input type="radio" name="optionsRadios" id="optionsRadios2">Pagamento Mensal
+                                    <label for="pagamentoMensal" class="pagamento-mensal">
                                         <div class="form-group">
-                                          <label for="item1" class="col-md-2 control-label text-left">Selecione abaixo a melhor data de vencimento para você.</label>
-                                          <div class="col-md-10">
-                                              <input type="radio" name="options" id="option1" autocomplete="off" checked> Radio 1 (preselected)
-                                          </label>
-                                          <label class="btn btn-primary">
-                                              <input type="radio" name="options" id="option2" autocomplete="off"> Radio 2
-                                          </label>
-                                          <label class="btn btn-primary">
-                                              <input type="radio" name="options" id="option3" autocomplete="off"> Radio 3
-                                          </label>
-                                          </div>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="pagamentoMensal" id="pagamentoMensal">Pagamento Mensal
+                                            </label>
+                                            <div class="form-group btn-group" data-toggle="buttons">
+                                                <label class="control-label text-left">Selecione abaixo a melhor data de vencimento para você.</label>
+                                                <label class="btn btn-option btn-primary">
+                                                    <input type="radio" name="options" id="02" autocomplete="off"> 02
+                                                </label>
+                                                <label class="btn btn-option btn-primary">
+                                                    <input type="radio" name="options" id="07" autocomplete="off"> 07
+                                                </label>
+                                                <label class="btn btn-option btn-primary">
+                                                    <input type="radio" name="options" id="12" autocomplete="off"> 12
+                                                </label>
+                                                <label class="btn btn-option btn-primary">
+                                                    <input type="radio" name="options" id="17" autocomplete="off"> 17
+                                                </label>
+                                                <label class="btn btn-option btn-primary">
+                                                    <input type="radio" name="options" id="22" autocomplete="off"> 22
+                                                </label>
+                                                <label class="btn btn-option btn-primary">
+                                                    <input type="radio" name="options" id="28" autocomplete="off"> 28
+                                                </label>
+                                            </div>
                                         </div>
                                     </label>
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row m-top-40">
                             <div class="form-group">
                                 <div class="col-lg-4">
                                     <input type="submit" class="btn btn-primary" value="Gerar Documentos">
